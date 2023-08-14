@@ -36,7 +36,7 @@ const Home = () => {
       <div className="my-16 text-center animate-fade-in">
         <h2 className="text-sm text-zinc-500 bg-clip-text ">
           <div className="w-100">
-            Hi, my name is Neeraj, I'm a software consultant.
+            Hi, my name is Neeraj, I am a software consultant.
           </div>
           <Link
             target="_blank"
