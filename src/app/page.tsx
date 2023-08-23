@@ -38,14 +38,6 @@ const Home = () => {
           <div className="w-100">
             Hi, my name is Neeraj, I am a software consultant.
           </div>
-          <Link
-            target="_blank"
-            href="https://upstash.com"
-            className="underline duration-500 hover:text-zinc-300"
-          >
-            Upstash
-          </Link>
-          <br />
           and working on{" "}
         </h2>
       </div>

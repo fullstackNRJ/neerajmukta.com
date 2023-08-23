@@ -60,9 +60,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <main className="bg-gradient-to-tl from-black via-zinc-600/20 to-black">
+        <main className=" flex flex-col items-center justify-center bg-gradient-to-tl from-black via-zinc-600/20 to-black">
           {children}
-          <div>This should persists across all routes</div>
+          {/*  <div>This should persists across all routes</div> */}
         </main>
       </body>
     </html>
