@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useState } from "react";
+import "./styles.css";
 
 const Page = () => {
   const [rotateY, setRotateY] = useState(0);

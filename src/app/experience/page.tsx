@@ -1,5 +1,5 @@
 "use client";
-import React, { useState } from "react";
+import React, { useMemo, useState } from "react";
 import "./styles.css";
 import Aboutme from "@/components/Aboutme";
 import Skills from "@/components/Skills";
@@ -12,9 +12,7 @@ const elements = [
   { id: 2, name: "Skill set", component: Skills },
   { id: 3, name: "Experience", component: Experience },
   { id: 4, name: "Projects", component: Projects },
-  { id: 5, name: "Reach out", component: ConnectForm },
-
-  // Add more components here...
+  //{ id: 5, name: "Reach out", component: ConnectForm }, this overlaps with component 1
 ];
 
 const Page = () => {
@@ -27,29 +25,51 @@ const Page = () => {
     setCurrentIndex(index);
   };
 
-  return (
-    <div className="app">
-      {/* Render the links to the components */}
-      <div className="navigationBar">
-        {elements.map((el, index) => (
-          <button key={el.id} onClick={() => rotate(index)}>
-            {el.name}
-          </button>
-        ))}
-      </div>
+  const getTranslateX = useMemo(() => {
+    switch (currentIndex) {
+      case 0:
+        return `translate-x-0`;
+      case 1:
+        return `translate-x-24`;
+      case 2:
+        return `translate-x-48`;
+      case 3:
+        return `translate-x-72`;
+    }
+  }, [currentIndex]);
 
+  return (
+    <div className="bg-blue-600 w-full h-screen flex flex-col justify-center items-center">
       {/* Create the rotating container */}
-      <div className="cube" style={{ transform: `rotateX(${rotateX}deg)` }}>
-        {elements.map((el, index) => (
+      <div className="bg-blue-700 w-fit h-fit p-4 flex flex-col justify-center items-center gap-10 ">
+        <div className="cube" style={{ transform: `rotateX(${rotateX}deg)` }}>
+          {elements.map((el, index) => (
+            <div
+              key={el.id}
+              className={`side side${index} ${
+                currentIndex === index ? "active" : ""
+              }`}
+            >
+              <el.component />
+            </div>
+          ))}
+        </div>
+
+        {/* Render the links to the components */}
+        <div className="flex gap-4 px-1 py-2 border-2 rounded-full border-white  ">
           <div
-            key={el.id}
-            className={`side side${index} ${
-              currentIndex === index ? "active" : ""
-            }`}
-          >
-            <el.component />
-          </div>
-        ))}
+            className={`absolute px-12 py-5 rounded-full bg-gray-900 transition-all delay-300 z-0 blur-sm ${getTranslateX} `}
+          />
+          {elements.map((el, index) => (
+            <button
+              key={el.id}
+              onClick={() => rotate(index)}
+              className={`p-2 z-10 `}
+            >
+              {el.name}
+            </button>
+          ))}
+        </div>
       </div>
     </div>
   );

@@ -1,16 +1,10 @@
-.navigationBar {
-  display: flex;
-  justify-content: space-evenly;
-  margin-bottom: 50px;
-  gap: 10px;
-}
-
 .cube {
   position: relative;
   width: 200px;
   height: 200px;
   transform-style: preserve-3d;
-  transition: transform 0.8s;
+  transition: all 1s ease;
+  border: 2px solid red;
 }
 
 .side {
@@ -21,6 +15,7 @@
   width: 200px;
   height: 200px;
   backface-visibility: hidden;
+  opacity: 0.8;
 }
 
 .side0 {
@@ -42,6 +37,6 @@
 /* add more if there are more components */
 
 .active {
-  background-color: grey;
+  /* background-color: grey; */
   color: white;
 }

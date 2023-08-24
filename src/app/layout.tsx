@@ -4,13 +4,13 @@ import { Inter } from "next/font/google";
 
 export const metadata: Metadata = {
   title: {
-    default: "neerajmukta.com",
-    template: "%s | chronark.com",
+    default: "Neeraj Mukta",
+    template: "%s | neerajmukta.com",
   },
-  description: "Team Lead at medbikri.com and software consultant.",
+  description: "Software Consultant, MVP guy, webflow developer",
   openGraph: {
     title: "neerajmukta.com",
-    description: "Team Lead at medbikri.com and software consultant.",
+    description: "Software consultant, webflow developer,  content writer, ",
     url: "https://neerajmukta.com",
     siteName: "neerajmukta.com",
     images: [
