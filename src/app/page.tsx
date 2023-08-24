@@ -1,10 +1,12 @@
 import Link from "next/link";
 
 const navigation = [
-  { name: "Expertise", href: "/expertise" },
-  { name: "Experience", href: "/experience" },
-  { name: "Projects", href: "/projects" },
-  { name: "Connect", href: "/connect" },
+  { name: "Modern", href: "/experience", target: "" },
+  {
+    name: "Classic Resume",
+    href: "https://resume.neerajmukta.com",
+    target: "blank",
+  },
 ];
 
 const Home = () => {
@@ -16,6 +18,7 @@ const Home = () => {
             <Link
               key={item.href}
               href={item.href}
+              target={item.target}
               className="text-sm duration-500 text-zinc-500 hover:text-zinc-300"
             >
               {item.name}

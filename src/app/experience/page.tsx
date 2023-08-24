@@ -1,13 +1,18 @@
 "use client";
 import React, { useState } from "react";
 import "./styles.css";
+import Aboutme from "@/components/Aboutme";
+import Skills from "@/components/Skills";
+import Experience from "@/components/Experience";
+import Projects from "@/components/Projects";
+import ConnectForm from "@/components/ConnectForm";
 
 const elements = [
-  { id: 1, name: "Component1", content: "This is Component 1" },
-  { id: 2, name: "Component2", content: "This is Component 2" },
-  { id: 3, name: "Component3", content: "This is Component 3" },
-  { id: 4, name: "Component4", content: "This is Component 4" },
-  { id: 5, name: "Component5", content: "This is Component 5" },
+  { id: 1, name: "About me", component: Aboutme },
+  { id: 2, name: "Skill set", component: Skills },
+  { id: 3, name: "Experience", component: Experience },
+  { id: 4, name: "Projects", component: Projects },
+  { id: 5, name: "Reach out", component: ConnectForm },
 
   // Add more components here...
 ];
@@ -17,7 +22,7 @@ const Page = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const rotate = (index: number) => {
-    let newRotateX = -90 * index;
+    let newRotateX = 90 * index;
     setRotateX(newRotateX);
     setCurrentIndex(index);
   };
@@ -42,7 +47,7 @@ const Page = () => {
               currentIndex === index ? "active" : ""
             }`}
           >
-            {el.content}
+            <el.component />
           </div>
         ))}
       </div>

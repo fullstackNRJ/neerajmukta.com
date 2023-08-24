@@ -1,5 +1,5 @@
 "use client";
-import AnimatedDiv from "@/components/AnimatedDiv";
+
 import React, { useState } from "react";
 
 const Page = () => {
