@@ -39,10 +39,14 @@ const Home = () => {
       <div className="my-16 text-center animate-fade-in">
         <h2 className="text-sm text-zinc-500 bg-clip-text ">
           <div className="w-100">
-            Hi, my name is Neeraj, I am a software consultant.
+            Jack of all trades(react, react-native, angular, x, y, x)
           </div>
-          and working on{" "}
+          and master of js/ts/product mvp
         </h2>
+      </div>
+      <div>Like button with counts (worker storage)</div>
+      <div>
+        social media icons on the right vertically, links to other domains
       </div>
     </div>
   );

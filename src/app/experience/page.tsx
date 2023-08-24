@@ -42,13 +42,12 @@ const Page = () => {
     <div className="bg-blue-600 w-full h-screen flex flex-col justify-center items-center">
       {/* Create the rotating container */}
       <div className="bg-blue-700 w-fit h-fit p-4 flex flex-col justify-center items-center gap-10 ">
-        <div className="cube" style={{ transform: `rotateX(${rotateX}deg)` }}>
+        <div className="cube " style={{ transform: `rotateX(${rotateX}deg)` }}>
           {elements.map((el, index) => (
             <div
               key={el.id}
-              className={`side side${index} ${
-                currentIndex === index ? "active" : ""
-              }`}
+              className={`side 
+               side${index} ${currentIndex === index ? "active" : ""}`}
             >
               <el.component />
             </div>
@@ -58,7 +57,7 @@ const Page = () => {
         {/* Render the links to the components */}
         <div className="flex gap-4 px-1 py-2 border-2 rounded-full border-white  ">
           <div
-            className={`absolute px-12 py-5 rounded-full bg-gray-900 transition-all delay-300 z-0 blur-sm ${getTranslateX} `}
+            className={`absolute px-12 py-5 rounded-full bg-gray-900 transition-all duration-700 z-0 blur-sm ${getTranslateX} `}
           />
           {elements.map((el, index) => (
             <button

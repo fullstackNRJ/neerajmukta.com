@@ -1,10 +1,9 @@
 .cube {
   position: relative;
-  width: 200px;
-  height: 200px;
+  width: 800px;
+  height: 800px;
   transform-style: preserve-3d;
   transition: all 1s ease;
-  border: 2px solid red;
 }
 
 .side {
@@ -12,8 +11,8 @@
   justify-content: center;
   align-items: center;
   position: absolute;
-  width: 200px;
-  height: 200px;
+  width: 800px;
+  height: 800px;
   backface-visibility: hidden;
   opacity: 0.8;
 }
@@ -37,6 +36,6 @@
 /* add more if there are more components */
 
 .active {
-  /* background-color: grey; */
-  color: white;
+  /* background-color: grey;
+  color: white; */
 }
