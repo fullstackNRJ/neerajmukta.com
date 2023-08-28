@@ -18,6 +18,7 @@ const elements = [
 const Page = () => {
   const [rotateX, setRotateX] = useState(0);
   const [currentIndex, setCurrentIndex] = useState(0);
+  const [hasInteractedWithNav, sethasInteractedwithNav] = useState(false); //repalce with useLocalStorage
 
   const rotate = (index: number) => {
     let newRotateX = 90 * index;
@@ -39,7 +40,7 @@ const Page = () => {
   }, [currentIndex]);
 
   return (
-    <div className="bg-blue-600 w-full h-screen flex flex-col justify-center items-center">
+    <div className="bg-blue-600 w-full h-screen flex flex-col justify-center items-center animate-fade-in">
       {/* Create the rotating container */}
       <div className="bg-blue-700 w-fit h-fit p-4 flex flex-col justify-center items-center gap-10 ">
         <div className="cube " style={{ transform: `rotateX(${rotateX}deg)` }}>
@@ -53,9 +54,16 @@ const Page = () => {
             </div>
           ))}
         </div>
-
+        {/* {!hasInteractedWithNav ? (
+          <span className="p-2">
+            Tip: click or touch on menu items below to navigate between section
+          </span>
+        ) : null} */}
         {/* Render the links to the components */}
-        <div className="flex gap-4 px-1 py-2 border-2 rounded-full border-white  ">
+        <div
+          className="flex gap-4 px-1 py-2 border-2 rounded-full border-white "
+          onClick={() => sethasInteractedwithNav(true)}
+        >
           <div
             className={`absolute px-12 py-5 rounded-full bg-gray-900 transition-all duration-700 z-0 blur-sm ${getTranslateX} `}
           />
