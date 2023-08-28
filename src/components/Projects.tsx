@@ -1,6 +1,6 @@
 import React from "react";
 
-function ImageDescription({ imageSrc, description, reverse }) {
+function ImageDescription({ imageSrc, description, reverse }: any) {
   // Determine the order of image and content based on the 'reverse' prop
   const imageOrder = reverse ? "order-2" : "order-1";
   const contentOrder = reverse ? "order-1" : "order-2";
