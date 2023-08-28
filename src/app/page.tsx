@@ -24,7 +24,7 @@ const masters = [
 ];
 const Home = () => {
   return (
-    <div className="flex flex-col p-2 items-center justify-center w-screen h-screen overflow-scroll bg-gradient-to-tl from-black via-zinc-600/20 to-black">
+    <div className="flex flex-col gap-10 p-2 items-center justify-center w-screen min-h-screen overflow-scroll bg-gradient-to-tl from-black via-zinc-600/20 to-black">
       <div className="absolute flex items-center justify-center top-0 w-full h-8 bg-orange-400 text-white text-center">
         <Link
           href="https://medium.com/@niraj.mukta123"
@@ -52,7 +52,7 @@ const Home = () => {
        <h4 className="p-4 animate-fade-in animate-shiny-text animate-text bg-gradient-to-r from-teal-500 via-purple-500 to-orange-500 bg-clip-text text-transparent text-5xl font-black">
         Experienced Freelancer | Fullstack JS developer | Webflow developer
       </h4> */}
-      <div className="mt-10 p-4 animate-fade-in">
+      <div className="mt-20 p-4 animate-fade-in">
         <h4 className="animate-shiny-text animate-text bg-gradient-to-r from-purple-800 via-slate-300 to-orange-500 bg-clip-text text-transparent text-xl font-black">
           Experienced Freelancer | Fullstack JS developer | Webflow developer{" "}
         </h4>
@@ -69,7 +69,7 @@ const Home = () => {
 
       <div className="hidden w-screen h-px animate-glow md:block animate-fade-right bg-gradient-to-r from-zinc-300/0 via-zinc-300/50 to-zinc-300/0" />
       <div className="mt-8 z-0   p-10 flex flex-col items-center shadow-md shadow-white border-slate-300 rounded-md delay-1000 animate-fade-in">
-        <div className="my-8 text-center animate-fade-in delay-500 h-8 overflow-hidden">
+        <div className="my-8 text-center animate-fade-in delay-500 h-8 md:h-10 overflow-hidden">
           <h2 className="flex text-center text-xl text-white-500 bg-clip-text ">
             Jack of all trades [
             <ul className="list-none animate-rotation">
