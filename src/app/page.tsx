@@ -24,7 +24,7 @@ const masters = [
 ];
 const Home = () => {
   return (
-    <div className="flex flex-col p-2 items-center justify-center w-screen h-screen overflow-hidden bg-gradient-to-tl from-black via-zinc-600/20 to-black">
+    <div className="flex flex-col p-2 items-center justify-center w-screen h-screen overflow-scroll bg-gradient-to-tl from-black via-zinc-600/20 to-black">
       <div className="absolute flex items-center justify-center top-0 w-full h-8 bg-orange-400 text-white text-center">
         <Link
           href="https://medium.com/@niraj.mukta123"
@@ -52,7 +52,7 @@ const Home = () => {
        <h4 className="p-4 animate-fade-in animate-shiny-text animate-text bg-gradient-to-r from-teal-500 via-purple-500 to-orange-500 bg-clip-text text-transparent text-5xl font-black">
         Experienced Freelancer | Fullstack JS developer | Webflow developer
       </h4> */}
-      <div className="p-4 animate-fade-in">
+      <div className="mt-10 p-4 animate-fade-in">
         <h4 className="animate-shiny-text animate-text bg-gradient-to-r from-purple-800 via-slate-300 to-orange-500 bg-clip-text text-transparent text-xl font-black">
           Experienced Freelancer | Fullstack JS developer | Webflow developer{" "}
         </h4>
@@ -63,7 +63,7 @@ const Home = () => {
         className="absolute inset-0 -z-10 animate-fade-in"
         quantity={100}
       /> */}
-      <h1 className="z-10 text-4xl py-2 text-transparent duration-1000 bg-white cursor-default text-edge-outline animate-title font-display sm:text-4xl md:text-6xl whitespace-nowrap bg-clip-text ">
+      <h1 className="z-10 text-4xl py-2 text-transparent duration-1000 bg-white cursor-default text-edge-outline animate-title font-display sm:text-4xl md:text-6xl whitespace-nowrap bg-clip-text bg-gradient-to-tr from-slate-400 via-slate-600 to-stone-300  ">
         Neeraj Mukta
       </h1>
 
