@@ -4,13 +4,13 @@ import { Inter } from "next/font/google";
 
 export const metadata: Metadata = {
   title: {
-    default: "neerajmukta.com",
-    template: "%s | chronark.com",
+    default: "Neeraj Mukta",
+    template: "%s | neerajmukta.com",
   },
-  description: "Team Lead at medbikri.com and software consultant.",
+  description: "Software Consultant, MVP guy, webflow developer",
   openGraph: {
     title: "neerajmukta.com",
-    description: "Team Lead at medbikri.com and software consultant.",
+    description: "Software consultant, webflow developer,  content writer, ",
     url: "https://neerajmukta.com",
     siteName: "neerajmukta.com",
     images: [
@@ -60,9 +60,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <main className="bg-gradient-to-tl from-black via-zinc-600/20 to-black">
+        <main className=" flex flex-col items-center justify-center bg-gradient-to-tl from-black via-zinc-600/20 to-black">
           {children}
-          <div>This should persists across all routes</div>
+          {/*  <div>This should persists across all routes</div> */}
         </main>
       </body>
     </html>
