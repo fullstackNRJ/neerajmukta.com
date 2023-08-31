@@ -4,9 +4,10 @@ import {
   incrementLike,
 } from "@/utils/APIRequests";
 import { useEffect, useState } from "react";
+import useLocalStorage from "./useLocalStorage";
 
 const useLikeButton = () => {
-  const [isLiked, setIsLiked] = useState(false);
+  const [isLiked, setIsLiked] = useLocalStorage("has-liked", false);
   const [likesCount, setLikesCount] = useState(0);
 
   //fetch likes from DB on change in isLiked
