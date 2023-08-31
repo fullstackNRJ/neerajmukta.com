@@ -140,7 +140,7 @@ const Home = () => {
           Checkout Resume
         </Link>
       </div>
-      <div className="p-2 mt-10 border-b-2 border-teal-200 flex animate-fade-in delay-1000">
+      <div className="p-2 mt-10 border-b-2 border-teal-200 flex animate-fade-in-right delay-1000">
         <span>
           <Link href="mailto:nirajunofficial@gmail.com">
             <svg
@@ -199,7 +199,7 @@ const Home = () => {
           </Link>
         </span>
       </div>
-      <div className="my-2 flex flex-col items-center">
+      <div className="my-2 flex flex-col items-center animate-fade-in-left">
         <h5>If you like my website, hit the like button</h5>
         <LikeButton
           liked={isLiked}

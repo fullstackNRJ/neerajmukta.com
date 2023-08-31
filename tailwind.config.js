@@ -40,7 +40,10 @@ module.exports = {
         "fade-in": "fade-in 4s ease-in forwards",
         title: "title 3s ease-out forwards",
         "fade-left": "fade-left 3s ease-in-out forwards",
+        "fade-in-left": "fade-in-left 3s ease-in forwards",
         "fade-right": "fade-right 3s ease-in-out forwards",
+        "fade-in-right": "fade-in-right 3s ease-in forwards",
+        "fade-in-bottom": "fade-in-bottom 3s ease-in forwards",
         "typewriter-storymode":
           "typing 3s steps(20) infinite alternate, blink .7s infinite ",
         "shiny-text": "clipText 5s ease infinite",
@@ -73,6 +76,21 @@ module.exports = {
             opacity: "0%",
           },
         },
+        "fade-in-left": {
+          "0%": {
+            transform: "translateX(-100%)",
+            opacity: "0%",
+          },
+
+          "30%": {
+            transform: "translateX(-30%)",
+            opacity: "30%",
+          },
+          "100%": {
+            transform: "translateX(0%)",
+            opacity: "100%",
+          },
+        },
         "fade-right": {
           "0%": {
             transform: "translateX(-100%)",
@@ -85,6 +103,36 @@ module.exports = {
           },
           "100%": {
             opacity: "0%",
+          },
+        },
+        "fade-in-right": {
+          "0%": {
+            transform: "translateX(100%)",
+            opacity: "0%",
+          },
+
+          "30%": {
+            transform: "translateX(30%)",
+            opacity: "30%",
+          },
+          "100%": {
+            transform: "translateX(0%)",
+            opacity: "100%",
+          },
+        },
+        "fade-in-bottom": {
+          "0%": {
+            transform: "translateY(100%)",
+            opacity: "0%",
+          },
+
+          "30%": {
+            transform: "translateY(30%)",
+            opacity: "30%",
+          },
+          "100%": {
+            transform: "translateY(0%)",
+            opacity: "100%",
           },
         },
         title: {
