@@ -60,7 +60,13 @@ const LikeButton: React.FC<{
           </svg>
         </span>
       )}
-      <h6 className="italic text-white font-medium">{likesCount}</h6>
+      <h6
+        className={`italic text-white font-medium ${
+          liked ? "animate-[pulse_2s_ease-in_forwards]" : ""
+        }`}
+      >
+        {likesCount}
+      </h6>
     </div>
   );
 };

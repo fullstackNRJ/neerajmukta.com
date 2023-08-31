@@ -10,15 +10,14 @@ const useLikeButton = () => {
   const [isLiked, setIsLiked] = useLocalStorage("has-liked", false);
   const [likesCount, setLikesCount] = useState(0);
 
-  //fetch likes from DB on change in isLiked
   useEffect(() => {
-    //localstorage has key -> setIsLiked(true)
     (async () => {
       const data = await getLikesCount();
-      if (data && data.status === 200) setLikesCount(data.likesCount);
+      if (data && data.status === 200) setLikesCount(parseInt(data.likesCount));
       //also update localstorage
     })();
-  }, [isLiked]);
+    console.log("likes count:", likesCount);
+  }, [isLiked, likesCount]);
 
   //update DB
 
@@ -29,18 +28,18 @@ const useLikeButton = () => {
     // else setLikesCount((prev) => prev + 1);
     try {
       if (isLiked) {
-        setLikesCount((prev) => prev - 1);
+        // setLikesCount((prev) => prev - 1);
         const data = await decrementLike();
         if (data && data.status === 200) {
           console.log("decrement success");
-          setLikesCount(data.likesCount);
+          setLikesCount(parseInt(data.likesCount));
         }
       } else {
-        setLikesCount((prev) => prev + 1);
+        // setLikesCount((prev) => prev + 1);
         const data = await incrementLike();
         if (data && data.status === 200) {
           console.log("increment success");
-          setLikesCount(data.likesCount);
+          setLikesCount(parseInt(data.likesCount));
         }
       }
     } catch (err) {
