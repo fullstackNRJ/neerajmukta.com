@@ -14,12 +14,9 @@ const useLikeButton = () => {
     (async () => {
       const data = await getLikesCount();
       if (data && data.status === 200) setLikesCount(parseInt(data.likesCount));
-      //also update localstorage
     })();
     console.log("likes count:", likesCount);
   }, [isLiked, likesCount]);
-
-  //update DB
 
   const handleLikeButtonClick = async () => {
     console.log("button clicked.");
