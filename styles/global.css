@@ -81,7 +81,7 @@ h1{
 }
 
 main{
-    margin:30%  auto;
+    margin:10%  auto;
    gap:2rem;
     display: flex;
     flex-direction: column;
