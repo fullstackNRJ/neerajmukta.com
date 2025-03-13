@@ -53,11 +53,16 @@ h1{
     width: 5rem;
     height: 5rem;
     object-fit: contain;
-    
+    cursor: pointer;
+}
+.icon:hover{
+    transform: scale(1.2);
+    opacity: .5;
+    transition: all .3s ease-in-out;
 }
  
 .x,.github{
-    background-color: var(--black-1);
+    background-color: var(--text-color);
     color:aliceblue;
     border-radius: 10%;
     width: 3.7rem;
@@ -107,6 +112,7 @@ header{
     justify-content: center;
     gap:2rem;
     line-height: 2.5rem;
+    cursor: pointer;
     
     & company{
         display: flex;
@@ -129,13 +135,20 @@ header{
         box-shadow: none;
         background-color: var(--black-1);
         border-radius: 1rem;
-        width: 8rem;
+        width: auto;
+        padding: .5rem 1rem;
         height: 5rem;
         text-align: center;
         line-height: 5rem;
         text-decoration: none;
         color: var(--text-color);
         font-weight: 400;
+        cursor: pointer;
+    }
+    & a:hover{
+        opacity: 0.5;
+        transform: scale(1.1);
+        transition: all .3s ease-in-out;
     }
 
 }

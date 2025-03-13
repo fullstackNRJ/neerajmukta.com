@@ -64,20 +64,20 @@
             </div>
         </header>
 
-        <section id="description">
+        <section id="description" onclick="openmvpwebsite()">
             <div class="company">
                 <div class="company_logo"><img class="company-logo" src="imgs/themvpco.svg" /></div>
                 <h2>The MVP co.</h2>
             </div>
             <div class="content">
-                <p> I help founders plan, design, and build their business ideas in no time.</p>
+                <p> We help founders plan, design, and build their business ideas in no time.</p>
             </div>
 
 
             <div style="display: flex; justify-content: space-between;">
-            <a>Hire me</a>
+            <!-- <a>Hire me</a> -->
 
-            <a href="webflow.html">Webflow</a>
+            <a class="link-btn" href="webflow.html" target="_blank">Visit Website</a>
         </div>
         </section>
 
@@ -90,11 +90,19 @@
         </section>
 
         <footer>
-            <p>&copy; 2024 Neeraj M</p>
+            <p>&copy; <span id="year">2025</span> Neeraj M</p>
         </footer>
 
     </main>
 
+    <script>
+        let year = new Date().getFullYear();
+        document.getElementById("year").innerHTML = year;
+
+        function openmvpwebsite() {
+            window.open("https://themvpco.one/", "_blank");
+        }
+    </script>
 
     <!-- your content here... -->
     <!-- <script src="js/scripts.js"></script> -->
