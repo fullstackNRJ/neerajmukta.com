@@ -13,6 +13,10 @@
     --black-2:rgb(17, 17, 17);
     --black-3:rgb(22, 22, 22);
     --black-4:rgb(28, 28, 28);
+    --brand-1:#8c52ff;
+    --brand-2:#ff914d;
+    --brand-3:#ff3d71;
+
 
 }
 
@@ -21,6 +25,7 @@ body{
     color:var(--text-color);
     font-size: 1.6rem;
     padding: 1rem 2rem;
+    overflow-x: hidden;
 }
 
 .avatar_container{
@@ -40,6 +45,31 @@ body{
 
 h1{
     text-align: center;
+}
+
+.book-call-cta {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background: linear-gradient(90deg, var(--brand-1), var(--brand-2));
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    z-index: 1000;
+    display: none;
+}
+
+.book-call-cta a {
+    color: white;
+    text-decoration: none;
+}
+
+@media (max-width: 768px) {
+    .book-call-cta {
+        position: static;
+        margin-top: 20px;
+        display: block;
+    }
 }
 
 .links{
@@ -86,8 +116,8 @@ h1{
 }
 
 main{
-    margin:10%  auto;
-   gap:2rem;
+    margin:10% auto;
+    gap:2rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -159,10 +189,160 @@ header{
     border-radius: 50%;
 }
 
+#action-btns{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    margin: 2rem 0;
+    & button{
+        background-color: var(--black-1);
+        border: none;
+        border-radius: 1rem;
+        color: var(--text-color);
+        cursor: pointer;
+        padding: 1rem;
+        font-weight: 500;
+    }
+
+}
+
+#action-btns-side{
+    display: grid;
+    grid-template-columns: repeat(2,1fr); 
+    gap: 1rem;
+    margin: 2rem 0;
+    & button{
+        background-color: var(--black-1);
+        border: none;
+        border-radius: 1rem;
+        color: var(--text-color);
+        cursor: pointer;
+        padding: 1rem;
+        font-weight: 500;
+    }
+}
+
+
+#infinite-marquee{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    
+    white-space: nowrap;
+    border-radius: 1rem;
+    background-color: var(--black-1);
+    
+}
+
+.marquee-items{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    overflow: hidden;
+    white-space: nowrap;
+    padding: 1rem;
+    background-color: var(--black-1);
+    border-radius: 1rem;
+    margin: 2rem 0;
+    cursor: pointer;
+    animation: marquee 15s linear infinite;
+}
+
+@keyframes marquee {
+    0% {
+        transform: translateX(40%);
+    }
+   
+    100% {
+        transform: translateX(-10%);
+    }
+}
+
+
+.marquee > i {
+    font-size: 6rem;
+    margin: 0 1rem;
+    color: #fff;
+}
+
 #project{
 
 }
 
 #wall-of-fame{
+
+}
+
+@media screen and (min-width: 600px) {
+   
+    #action-btns{
+        grid-template-columns: repeat(3,1fr);
+    }
+}
+
+@media screen and (min-width: 768px) {
+    body{
+        font-size: 2rem;
+        overflow-x: hidden;
+    }
+    #action-btns{
+        
+        grid-template-columns: repeat(4,1fr);
+    }
+    .action-btn{
+        font-size: 2rem;
+    }
+
+    .action-btn:hover {
+        transform: scale(1.2) translateX(2rem);
+        opacity: 0.5;
+        transition: all 0.3s ease-in-out;
+        z-index: 10; /* Ensure the hovered button appears on top */
+    }
+    
+    .action-btn:hover ~ .action-btn {
+        z-index: 0;
+        transform: translateX(4rem); /* Push other buttons slightly to the right */
+        transition: transform 0.3s ease-in-out;
+    }
+
+    .action-btn-side{
+        position: absolute;
+        font-size: 2.5rem;
+
+    }
+
+    .action-btn-side:hover {
+        transform: scale(1.2) translateX(-2rem);
+        opacity: 0.5;
+        transition: all 0.5s ease-in-out;
+    }
+
+    .action-btn-side {
+        transition: all 0.5s ease-in-out;
+    }
+
+    .action-btn-side.blogs{
+        top: 40rem;
+        right:0rem;
+        
+    }
+
+    .action-btn-side.services{
+        top: 50rem;
+        right:0rem;
+    }
+
+    .action-btn-side.projects{
+        top: 60rem;
+        right:0rem;        
+    }
+
+    .action-btn-side.faqs{        
+        top: 70rem;
+        right:0rem;        
+    }
 
 }
