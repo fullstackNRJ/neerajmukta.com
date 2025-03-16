@@ -336,6 +336,15 @@ background-color: rgba(0, 0, 0, 0.5); /* Dark overlay */
     animation: slide-in-right 0.5s forwards;
 }
 
+@keyframes slide-in-left {
+    from {
+        left: -100%;
+    }
+    to {
+        left: 0;
+    }
+}
+
 @keyframes slide-in-top {
     from {
         top: -100%;
@@ -347,28 +356,21 @@ background-color: rgba(0, 0, 0, 0.5); /* Dark overlay */
 
 @keyframes slide-in-bottom {
     from {
-        bottom: -100%;
+       transform: translateY(100%);
     }
     to {
-        bottom: 0;
+        transform: translateY(0);
     }
 }
 
-@keyframes slide-in-left {
-    from {
-        left: -100%;
-    }
-    to {
-        left: 0;
-    }
-}
+
 
 @keyframes slide-in-right {
     from {
-        right: -100%;
+        transform: translateX(100%);
     }
     to {
-        right: 0;
+        transform: translateX(0);
     }
 }
 
