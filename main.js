@@ -115,56 +115,83 @@ const introHtml = `<section id="intro" style="max-width: 800px; margin: auto; te
         <!-- Timeline Item -->
         <div style="margin-bottom: 2rem; position: relative;">
             <div style="position: absolute; left: -1.8rem; top: 0.5rem; width: 1rem; height: 1rem; background: #ff6b00; border-radius: 50%;"></div>
-            <h3 style="color: #ff6b00; font-size: 1.5rem;">2016 - The Programming Journey Begins</h3>
-            <p style="color: #ccc; font-size: 1.2rem; line-height: 1.5;">
+            <h3 style="color: #ff6b00; font-size: 1.6rem;">2016 - The Programming Journey Begins</h3>
+            <p style="color: #ccc; font-size: 1.4rem; line-height: 1.5;">
                 Created a responsive website for an NGO fundraising campaign, followed by another to aid Chennai flood victims.
             </p>
-            <p style="color: #ff6b00; font-size: 1rem;"><strong>Tech Stack:</strong> HTML, CSS, JS, jQuery, PHP, MySQL</p>
+            <p style="color: #ff6b00; font-size: 1.4rem;"><strong>Tech Stack:</strong> HTML, CSS, JS, jQuery, PHP, MySQL</p>
         </div>
 
         <div style="margin-bottom: 2rem; position: relative;">
             <div style="position: absolute; left: -1.8rem; top: 0.5rem; width: 1rem; height: 1rem; background: #ff6b00; border-radius: 50%;"></div>
-            <h3 style="color: #ff6b00; font-size: 1.5rem;">2017 - Freelancing & Multimedia</h3>
-            <p style="color: #ccc; font-size: 1.2rem; line-height: 1.5;">
+            <h3 style="color: #ff6b00; font-size: 1.6rem;">2017 - Freelancing & Multimedia</h3>
+            <p style="color: #ccc; font-size: 1.4rem; line-height: 1.5;">
                 Started freelancing with college seniors while picking up skills in video direction, editing, and photography.
             </p>
-             <p style="color: #ff6b00; font-size: 1rem;"><strong>Tech Stack:</strong> React Native, Node.js, Postgres, AWS</p>
+             <p style="color: #ff6b00; font-size: 1.4rem;"><strong>Tech Stack:</strong> HTML, CSS, JS, jQuery, PHP, MySQL, Photoshop, Lightroom, Premier</p>
         </div>
 
         <div style="margin-bottom: 2rem; position: relative;">
             <div style="position: absolute; left: -1.8rem; top: 0.5rem; width: 1rem; height: 1rem; background: #ff6b00; border-radius: 50%;"></div>
-            <h3 style="color: #ff6b00; font-size: 1.5rem;">2018 - Entering the Corporate World</h3>
-            <p style="color: #ccc; font-size: 1.2rem; line-height: 1.5;">
+            <h3 style="color: #ff6b00; font-size: 1.6rem;">2018 - Entering the Corporate World</h3>
+            <p style="color: #ccc; font-size: 1.4rem; line-height: 1.5;">
                 Joined an MNC, working with banking and e-commerce clients, gaining experience in full-stack development.
             </p>
-         <p style="color: #ff6b00; font-size: 1rem;"><strong>Tech Stack:</strong> React Native, Node.js, Postgres, AWS</p>
+         <p style="color: #ff6b00; font-size: 1.4rem;"><strong>Tech Stack:</strong> Java, Springboot, Couchbase, graphql, Angular, Dialogflow, K6, AWS</p>
         </div>
 
         <div style="margin-bottom: 2rem; position: relative;">
             <div style="position: absolute; left: -1.8rem; top: 0.5rem; width: 1rem; height: 1rem; background: #ff6b00; border-radius: 50%;"></div>
-            <h3 style="color: #ff6b00; font-size: 1.5rem;">2020 - Gaming & Startups</h3>
-            <p style="color: #ccc; font-size: 1.2rem; line-height: 1.5;">
-                Built features for Blitz.gg, helping gamers track performance. Later, joined eGov Foundation to enhance civic platforms.
+            <h3 style="color: #ff6b00; font-size: 1.6rem;">2020 - Gaming Startup</h3>
+            <p style="color: #ccc; font-size: 1.4rem; line-height: 1.5;">
+                Built features for Blitz.gg, helping gamers track performance. It was a remote job for a US-based startup. I got to work on a lot of cool features and learned a lot about scaling tech. My primary focus was on 2 games, League of Legends and Valorant. I buil desktop app features like offscreen rendering, and in-game overlay. I also spent time withh our users to debug issues in real-time.
             </p>
-             <p style="color: #ff6b00; font-size: 1rem;"><strong>Tech Stack:</strong> React Native, Node.js, Postgres, AWS</p>
+             <p style="color: #ff6b00; font-size: 1.4rem;"><strong>Tech Stack:</strong> React, Electron, Wasm, Nodejs, sequalize, Postgres</p>
         </div>
 
         <div style="margin-bottom: 2rem; position: relative;">
             <div style="position: absolute; left: -1.8rem; top: 0.5rem; width: 1rem; height: 1rem; background: #ff6b00; border-radius: 50%;"></div>
-            <h3 style="color: #ff6b00; font-size: 1.5rem;">2021 - Remote Work & Scaling Tech</h3>
-            <p style="color: #ccc; font-size: 1.2rem; line-height: 1.5;">
-                Worked with RemoteFront.io, optimizing global job access for developers, and improved UI/UX for government applications.
+            <h3 style="color: #ff6b00; font-size: 1.6rem;">2021 - Remote Work & Scaling Tech</h3>
+            <p style="color: #ccc; font-size: 1.4rem; line-height: 1.5;">
+                While continued working for Blitz.gg I also started working on RemoteFront.io, a job board optimizing global job access for developers with my colleague. And that year I also worked for an NGO that builts apps for government applications.
             </p>
-             <p style="color: #ff6b00; font-size: 1rem;"><strong>Tech Stack:</strong> React Native, Node.js, Postgres, AWS</p>
+             <p style="color: #ff6b00; font-size: 1.4rem;"><strong>Tech Stack:</strong> React, Nextjs, Strapi, Electron, Tailwindcss, Vercel</p>
         </div>
 
         <div style="margin-bottom: 2rem; position: relative;">
             <div style="position: absolute; left: -1.8rem; top: 0.5rem; width: 1rem; height: 1rem; background: #ff6b00; border-radius: 50%;"></div>
-            <h3 style="color: #ff6b00; font-size: 1.5rem;">2022 - Leading Tech at Medbikri</h3>
-            <p style="color: #ccc; font-size: 1.2rem; line-height: 1.5;">
-                Became Lead Engineer at Medbikri, developing AI-powered **OCR Smart Inventory Upload** and scaling operations.
+            <h3 style="color: #ff6b00; font-size: 1.6rem;">2022 - Leading Tech at Medbikri</h3>
+            <p style="color: #ccc; font-size: 1.4rem; line-height: 1.5;">
+                Became Lead Engineer at Medbikri, developing AI-powered  app for smart inventory management and scaling operations. A notable feature I developed was the OCR Smart Inventory Upload. We scaled to 50K users in 6 months.
             </p>
-            <p style="color: #ff6b00; font-size: 1rem;"><strong>Tech Stack:</strong> React Native, Node.js, Postgres, AWS</p>
+            <p style="color: #ff6b00; font-size: 1.4rem;"><strong>Tech Stack:</strong> React, React Native, Node.js, Postgres, AWS</p>
+        </div>
+
+         <div style="margin-bottom: 2rem; position: relative;">
+            <div style="position: absolute; left: -1.8rem; top: 0.5rem; width: 1rem; height: 1rem; background: #ff6b00; border-radius: 50%;"></div>
+            <h3 style="color: #ff6b00; font-size: 1.6rem;">2023 - First Startup</h3>
+            <p style="color: #ccc; font-size: 1.4rem; line-height: 1.5;">
+               I quit my job to work on my startup, Athleap, and built a platform for sports academies & coaches to manage their students and sales through a single platform. It was also a discovery platforms for sports enthusiasts to find sports academies and coaches.
+               After about signing up 20 academices and 100 + users in 3 months, I had to shut it down due to lack of funding. The market was so focused on Gen AI that it was hard to get funding for a platform that was not AI or ML focused.
+               Soon, after that I started freelancing bulding marketing websites and tools for other startups.
+            </p>
+            <p style="color: #ff6b00; font-size: 1.4rem;"><strong>Tech Stack:</strong> React Native, NextJs, Webflow, Node.js, Postgres, AWS</p>
+        </div>
+        <div style="margin-bottom: 2rem; position: relative;">
+            <div style="position: absolute; left: -1.8rem; top: 0.5rem; width: 1rem; height: 1rem; background: #ff6b00; border-radius: 50%;"></div>
+            <h3 style="color: #ff6b00; font-size: 1.6rem;">2024 - Freelance Engineer</h3>
+            <p style="color: #ccc; font-size: 1.4rem; line-height: 1.5;">
+               This year I completely focused on buidling marketing websites and tools for startups using no code and low code platforms. I worked with different agencies to help them solve complex problems. I also started working on my own projects and building tools for myself.
+            </p>
+            <p style="color: #ff6b00; font-size: 1.4rem;"><strong>Tech Stack:</strong> Webflow, Framer, Javascript, Cloudflare, Zapier, Wized, Supabase, Airtable</p>
+        </div>
+        <div style="margin-bottom: 2rem; position: relative;">
+            <div style="position: absolute; left: -1.8rem; top: 0.5rem; width: 1rem; height: 1rem; background: #ff6b00; border-radius: 50%;"></div>
+            <h3 style="color: #ff6b00; font-size: 1.6rem;">2025<sup>*</sup> - Freelance Engineer</h3>
+            <p style="color: #ccc; font-size: 1.4rem; line-height: 1.5;">
+                These days I'm trying to scale my freelance business and also working on building digital products. I'm trying to learn more about AI and ML and by building cool stuff that people can use and potentially pay for.
+            </p>
+            <p style="color: #ff6b00; font-size: 1.4rem;"><strong>Tech Stack:</strong> Astro, React, Nextjs, Node.js, Postgres, Cloudflare, Digital ocean</p>
         </div>
 
     </div>
