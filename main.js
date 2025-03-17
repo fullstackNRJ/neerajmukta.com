@@ -262,6 +262,11 @@ const introHtml = `<section id="intro" style="max-width: 800px; margin: auto; te
         document.querySelector(`.action-btn-side.${id}`).textContent = text
     }
 
+    function sscrollTo(id) {
+        const element = document.getElementById(id);
+        element.scrollIntoView({ behavior: 'smooth' });
+    }
+
     document.addEventListener('DOMContentLoaded', () => {
 
 
@@ -292,6 +297,16 @@ const introHtml = `<section id="intro" style="max-width: 800px; margin: auto; te
             if (event.target === modal) {
                 modal.style.display = "none";
             }
+        });
+
+        //faq
+        document.querySelectorAll(".faq-question").forEach((button) => {
+            button.addEventListener("click", () => {
+                
+                const answer = button.nextElementSibling;
+                answer.classList.toggle('faq-active') 
+               
+            });
         });
     })
 

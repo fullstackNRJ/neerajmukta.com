@@ -98,9 +98,9 @@
 
         <section id="action-btns-side">
             <button class="action-btn-side blogs" onclick="openPopup('intro')">Blogs (cmd+B)</button>
-            <button class="action-btn-side services" onclick="openPopup('services')">Services (cmd+S)</button>
-            <button class="action-btn-side projects" onclick="openPopup('projects')">Projects (cmd+P)</button>
-            <button class="action-btn-side faqs" onclick="openPopup('faqs')">FAQs (cmd+F)</button>
+            <button class="action-btn-side services" onclick="sscrollTo('services')">Services (cmd+S)</button>
+            <button class="action-btn-side projects" onclick="sscrollTo('projects')">Projects (cmd+P)</button>
+            <button class="action-btn-side faqs" onclick="sscrollTo('faq')">FAQs (cmd+F)</button>
         </section>
 
         <section id="infinite-marquee">
@@ -410,6 +410,151 @@
         <!--   <section id="projects">
         <h2>Projects</h2>
     </section> -->
+
+    <section id="services">
+        <h2>💼 Services & Pricing</h2>
+        <p class="pricing-note">All rates are indicative * and final quotation will be provided based on scope and complexity.</p>
+    
+        <div class="pricing-container">
+            
+            <div class="pricing-item">
+                <h3>🌐 Website Development (Open Source)</h3>
+                <p class="price">$99 / page</p>
+                <ul>
+                    <li>Responsive & SEO-friendly</li>
+                    <li>Custom design & layout</li>
+                    <li>Basic animations & interactions</li>
+                    <li>Performance optimization</li>
+                </ul>
+            </div>
+    
+            <div class="pricing-item">
+                <h3>⚡ Website Development (No Code)</h3>
+                <p class="price">$199 / page</p>
+                <ul>
+                    <li>Built with Webflow, Bubble, or Framer</li>
+                    <li>Pixel-perfect responsive design</li>
+                    <li>CMS & automation setup</li>
+                    <li>Faster go-to-market</li>
+                </ul>
+            </div>
+    
+            <div class="pricing-item">
+                <h3>🛠️ Custom JavaScript Tools</h3>
+                <p class="price">$149 / tool</p>
+                <ul>
+                    <li>Custom-built JS utilities</li>
+                    <li>Browser extensions</li>
+                    <li>Interactive widgets</li>
+                    <li>API integrations</li>
+                </ul>
+            </div>
+    
+            <div class="pricing-item">
+                <h3>🚀 Web App Development (Open Source)</h3>
+                <p class="price">$499</p>
+                <ul>
+                    <li>React, Node.js, PostgreSQL</li>
+                    <li>Authentication & APIs</li>
+                    <li>Custom dashboards & components</li>
+                    <li>Deployed on AWS/Vercel</li>
+                </ul>
+            </div>
+    
+            <div class="pricing-item">
+                <h3>⚙️ Web App Development (No Code)</h3>
+                <p class="price">$699</p>
+                <ul>
+                    <li>Built with Bubble or Webflow</li>
+                    <li>Scalable database structure</li>
+                    <li>Automation workflows</li>
+                    <li>Third-party integrations</li>
+                </ul>
+            </div>
+    
+            <div class="pricing-item">
+                <h3>🔄 Website Revamp</h3>
+                <p class="price">Starts at $299</p>
+                <ul>
+                    <li>UI/UX improvements</li>
+                    <li>Speed & performance boost</li>
+                    <li>SEO & accessibility fixes</li>
+                    <li>Code refactoring</li>
+                </ul>
+            </div>
+    
+            <div class="pricing-item">
+                <h3>🎓 Training / Mentoring</h3>
+                <p class="price">$999 / 4 hours</p>
+                <ul>
+                    <li>Webflow, React, or AI development</li>
+                    <li>1-on-1 guidance</li>
+                    <li>Live coding sessions</li>
+                    <li>Project-based learning</li>
+                </ul>
+            </div>
+    
+        </div>
+    </section>
+
+    <section id="faq">
+        <h2>❓ Frequently Asked Questions</h2>
+    
+        <div class="faq-container">
+            
+            <div class="faq-item">
+                <button class="faq-question">💡 What services do you offer?</button>
+                <div class="faq-answer">
+                    I specialize in **MVP development, AI-powered apps, automation, full-stack web & mobile development, and consulting.**
+                </div>
+            </div>
+    
+            <div class="faq-item">
+                <button class="faq-question">⏳ How long will my project take?</button>
+                <div class="faq-answer">
+                    Project timelines depend on **scope & complexity**, but I always aim for **efficient and fast delivery** while maintaining high quality. Let's discuss your specific needs!
+                </div>
+            </div>
+    
+            <div class="faq-item">
+                <button class="faq-question">💰 What are your rates?</button>
+                <div class="faq-answer">
+                    My rates vary based on project complexity and scope. Contact me for a customized quote!
+                </div>
+            </div>
+    
+            <div class="faq-item">
+                <button class="faq-question">📜 Do you offer contracts or NDAs?</button>
+                <div class="faq-answer">
+                    Yes! I provide **contracts for clarity** and **NDAs for confidentiality** when required.
+                </div>
+            </div>
+    
+            <div class="faq-item">
+                <button class="faq-question">🔧 Will you maintain the project after delivery?</button>
+                <div class="faq-answer">
+                    Yes! I offer **ongoing support, bug fixes, and maintenance** on a retainer or as needed.
+                </div>
+            </div>
+    
+            <div class="faq-item">
+                <button class="faq-question">🎨 Can you help with UI/UX design?</button>
+                <div class="faq-answer">
+                    Absolutely! I can assist with **UI/UX design, wireframing, and front-end implementation**.
+                </div>
+            </div>
+    
+        </div>
+    </section>
+    
+    <script>
+        document.querySelectorAll(".faq-question").forEach((button) => {
+            button.addEventListener("click", () => {
+                const answer = button.nextElementSibling;
+                answer.style.display = answer.style.display === "block" ? "none" : "block";
+            });
+        });
+    </script>
 
         <section id="wall-of-fame">
             
