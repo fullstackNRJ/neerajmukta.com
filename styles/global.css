@@ -1,42 +1,41 @@
-
-:root{
-    margin:0;
-    padding:0;  
+:root {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
     font-family: 'Inter', sans-serif;
     font-size: 62.5%;
     --text-color: rgb(255, 255, 255);
 
     --text-color-2: rgba(237, 237, 237, .85);
-    --text-color-3:rgba(126, 126, 126);
-    --black-1:#282828;
-    --black-2:rgb(17, 17, 17);
-    --black-3:rgb(22, 22, 22);
-    --black-4:rgb(28, 28, 28);
-    --brand-1:#8c52ff;
-    --brand-2:#ff914d;
-    --brand-3:#ff3d71;
+    --text-color-3: rgba(126, 126, 126);
+    --black-1: #282828;
+    --black-2: rgb(17, 17, 17);
+    --black-3: rgb(22, 22, 22);
+    --black-4: rgb(28, 28, 28);
+    --brand-1: #8c52ff;
+    --brand-2: #ff914d;
+    --brand-3: #ff3d71;
 
 
 }
 
-body{
+body {
     background-color: rgb(17, 17, 17);
-    color:var(--text-color);
+    color: var(--text-color);
     font-size: 1.6rem;
     padding: 1rem 2rem;
     overflow-x: hidden;
     user-select: none;
 }
 
-.avatar_container{
-    width:10rem;
-    height:10rem;
+.avatar_container {
+    width: 10rem;
+    height: 10rem;
     /* object-fit: contain; */
     /* border-radius: 50%; */
     margin: 0 auto;
 
-    & img{
+    & img {
         width: 100%;
         height: 100%;
         object-fit: contain;
@@ -44,7 +43,7 @@ body{
     }
 }
 
-h1{
+h1 {
     text-align: center;
 }
 
@@ -73,67 +72,70 @@ h1{
     }
 }
 
-.links{
-   display: flex;
-   align-items: center;
-   gap: 2rem;
+.links {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
 
 }
 
-.icon{
+.icon {
     width: 5rem;
     height: 5rem;
     object-fit: contain;
     cursor: pointer;
 }
-.icon:hover{
+
+.icon:hover {
     transform: scale(1.2);
     opacity: .5;
     transition: all .3s ease-in-out;
 }
- 
-.x,.github{
+
+.x,
+.github {
     background-color: var(--text-color);
-    color:aliceblue;
+    color: aliceblue;
     border-radius: 10%;
     width: 3.7rem;
     height: 3.7rem;
-    
+
 }
 
-.titles{
+.titles {
     color: var(--text-color-3);
     display: flex;
     gap: 1rem;
-    & i{
+
+    & i {
         font-style: normal;
         font-weight: 700;
     }
 
-    &  i:not(:first-child):before{
+    & i:not(:first-child):before {
         content: ".";
         margin-right: 1.5rem;
     }
 }
 
-main{
-    margin:10% auto;
-    gap:2rem;
+main {
+    margin: 10% auto;
+    gap: 2rem;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
 
-header{
+header {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap:2rem;
+    gap: 2rem;
 }
 
-#description{
+#description {
     background-color: var(--black-3);
     padding: 2rem;
     border-radius: 1rem;
@@ -141,28 +143,28 @@ header{
     flex-direction: column;
     align-items: stretch;
     justify-content: center;
-    gap:2rem;
+    gap: 2rem;
     line-height: 2.5rem;
     cursor: pointer;
-    
-    & company{
+
+    & company {
         display: flex;
         align-items: center;
         gap: 1rem
     }
 
-    & company_logo{
+    & company_logo {
         width: 5rem;
         height: 5rem;
-        object-fit: contain;        
+        object-fit: contain;
     }
 
-    & .content{
-        color:var(--text-color-3);
+    & .content {
+        color: var(--text-color-3);
         font-weight: 500;
     }
 
-    & a{
+    & a {
         box-shadow: none;
         background-color: var(--black-1);
         border-radius: 1rem;
@@ -176,7 +178,8 @@ header{
         font-weight: 400;
         cursor: pointer;
     }
-    & a:hover{
+
+    & a:hover {
         opacity: 0.5;
         transform: scale(1.1);
         transition: all .3s ease-in-out;
@@ -184,18 +187,19 @@ header{
 
 }
 
-.company-logo{
+.company-logo {
     width: 10rem;
     height: 10rem;
     border-radius: 50%;
 }
 
-#action-btns{
+#action-btns {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 1rem;
     margin: 2rem 0;
-    & button{
+
+    & button {
         background-color: var(--black-1);
         border: none;
         border-radius: 1rem;
@@ -207,12 +211,13 @@ header{
 
 }
 
-#action-btns-side{
+#action-btns-side {
     display: grid;
-    grid-template-columns: repeat(2,1fr); 
+    grid-template-columns: repeat(2, 1fr);
     gap: 1rem;
     margin: 2rem 0;
-    & button{
+
+    & button {
         background-color: var(--black-1);
         border: none;
         border-radius: 1rem;
@@ -224,19 +229,19 @@ header{
 }
 
 
-#infinite-marquee{
+#infinite-marquee {
     display: flex;
     align-items: center;
     justify-content: center;
     overflow: hidden;
-    
+
     white-space: nowrap;
     border-radius: 1rem;
     background-color: var(--black-1);
-    
+
 }
 
-.marquee-items{
+.marquee-items {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -255,14 +260,14 @@ header{
     0% {
         transform: translateX(40%);
     }
-   
+
     100% {
         transform: translateX(-10%);
     }
 }
 
 
-.marquee > i {
+.marquee>i {
     font-size: 6rem;
     margin: 0 1rem;
     color: #fff;
@@ -351,6 +356,7 @@ header{
 
 /* FAQ Section Styling */
 #faq {
+    width: 100%;
     max-width: 56rem;
     margin: auto;
     padding: 3rem;
@@ -374,6 +380,8 @@ header{
     background: #222;
     border-radius: 0.5rem;
     overflow: hidden;
+    transition: transform 0.2s ease-in-out;
+    cursor: pointer;
 }
 
 .faq-question {
@@ -395,42 +403,44 @@ header{
     padding: 0 1rem 1rem;
 }
 
-.faq-active{
+.faq-active {
     display: block;
 }
 
-#project{
-
+.faq-item:hover{
+    transform: scale(1.2);
 }
 
-#wall-of-fame{
+#project {}
 
-}
+#wall-of-fame {}
 
 /* modal */
 .modal {
-    display: none; /* Hidden initially */
+    display: none;
+    /* Hidden initially */
     justify-content: center;
-position: fixed;
-z-index: 1000;
-left: 0;
-top: 0;
-width: 100%;
-height: 100%;
-background-color: rgba(0, 0, 0, 0.5); /* Dark overlay */
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Dark overlay */
     transition: all 0.3s ease;
 }
 
 .modal-content {
     display: flex;
     flex-direction: column;
-    gap:2rem;
+    gap: 2rem;
     position: relative;
     margin: 10% auto;
     padding: 1.5rem;
     border: 1px solid #888;
     width: 100%;
-    
+
     min-height: 50%;
     background-color: var(--black-3);
     opacity: 90%;
@@ -488,6 +498,7 @@ background-color: rgba(0, 0, 0, 0.5); /* Dark overlay */
     from {
         left: -100%;
     }
+
     to {
         left: 0;
     }
@@ -497,6 +508,7 @@ background-color: rgba(0, 0, 0, 0.5); /* Dark overlay */
     from {
         top: -100%;
     }
+
     to {
         top: 0;
     }
@@ -504,8 +516,9 @@ background-color: rgba(0, 0, 0, 0.5); /* Dark overlay */
 
 @keyframes slide-in-bottom {
     from {
-       transform: translateY(100%);
+        transform: translateY(100%);
     }
+
     to {
         transform: translateY(0);
     }
@@ -517,6 +530,7 @@ background-color: rgba(0, 0, 0, 0.5); /* Dark overlay */
     from {
         transform: translateX(100%);
     }
+
     to {
         transform: translateX(0);
     }
@@ -526,6 +540,7 @@ background-color: rgba(0, 0, 0, 0.5); /* Dark overlay */
     from {
         left: 0;
     }
+
     to {
         left: -100%;
     }
@@ -535,6 +550,7 @@ background-color: rgba(0, 0, 0, 0.5); /* Dark overlay */
     from {
         top: 0;
     }
+
     to {
         top: -100%;
     }
@@ -544,6 +560,7 @@ background-color: rgba(0, 0, 0, 0.5); /* Dark overlay */
     from {
         transform: translateY(0);
     }
+
     to {
         transform: translateY(100%);
     }
@@ -553,6 +570,7 @@ background-color: rgba(0, 0, 0, 0.5); /* Dark overlay */
     from {
         transform: translateX(0);
     }
+
     to {
         transform: translateX(100%);
     }
@@ -560,31 +578,43 @@ background-color: rgba(0, 0, 0, 0.5); /* Dark overlay */
 
 /* media queries */
 
+@media screen and (max-width: 650px) {
+      .pricing-item .price {
+        position: unset;
+      }   
+
+}
+
+
 /*TO do fix overflow thing for mobile view*/
 @media screen and (max-width: 768px) {
-    #infinite-marquee{
+    #infinite-marquee {
         display: none;
     }
 }
 
 @media screen and (min-width: 600px) {
-   
-    #action-btns{
-        grid-template-columns: repeat(3,1fr);
+
+    #action-btns {
+        grid-template-columns: repeat(3, 1fr);
     }
 }
 
 @media screen and (min-width: 768px) {
-    body{
+    body {
         font-size: 2rem;
         overflow-x: hidden;
         user-select: none;
     }
-    #action-btns{
-        
-        grid-template-columns: repeat(4,1fr);
+
+   
+
+    #action-btns {
+
+        grid-template-columns: repeat(4, 1fr);
     }
-    .action-btn{
+
+    .action-btn {
         font-size: 2rem;
     }
 
@@ -592,16 +622,18 @@ background-color: rgba(0, 0, 0, 0.5); /* Dark overlay */
         transform: scale(1.2) translateX(2rem);
         opacity: 0.5;
         transition: all 0.3s ease-in-out;
-        z-index: 10; /* Ensure the hovered button appears on top */
+        z-index: 10;
+        /* Ensure the hovered button appears on top */
     }
-    
-    .action-btn:hover ~ .action-btn {
+
+    .action-btn:hover~.action-btn {
         z-index: 0;
-        transform: translateX(4rem); /* Push other buttons slightly to the right */
+        transform: translateX(4rem);
+        /* Push other buttons slightly to the right */
         transition: transform 0.3s ease-in-out;
     }
 
-    .action-btn-side{
+    .action-btn-side {
         position: absolute;
         font-size: 2.5rem;
 
@@ -617,25 +649,25 @@ background-color: rgba(0, 0, 0, 0.5); /* Dark overlay */
         transition: all 0.5s ease-in-out;
     }
 
-    .action-btn-side.blogs{
+    .action-btn-side.blogs {
         top: 40rem;
-        right:0rem;
-        
+        right: 0rem;
+
     }
 
-    .action-btn-side.services{
+    .action-btn-side.services {
         top: 50rem;
-        right:0rem;
+        right: 0rem;
     }
 
-    .action-btn-side.projects{
+    .action-btn-side.projects {
         top: 60rem;
-        right:0rem;        
+        right: 0rem;
     }
 
-    .action-btn-side.faqs{        
+    .action-btn-side.faqs {
         top: 70rem;
-        right:0rem;        
+        right: 0rem;
     }
 
 }
